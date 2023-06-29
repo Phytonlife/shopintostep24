@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Интернет-магазин - Дни рождения</title>
+  <style>
+    /* Стили для меню */
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    /* Анимация зума при наведении */
+    li a:hover {
+      transform: scale(1.1);
+    }
+
+    /* Фоновая картинка */
+    body {
+      background-image: url("https://kalix.club/uploads/posts/2022-12/1671532869_kalix-club-p-oboi-prazdnik-krasivo-1.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+  <!-- Меню с надписями ссылками -->
+  {%block mainmenu%}
+  <ul>
+    <li><a href="#birthday">День рождения</a></li>
+    <li><a href="#wedding">Свадьба</a></li>
+    <li><a href="#opening">Открытие</a></li>
+    <li><a href="#celebration">Праздник</a></li>
+  </ul>
+  {%endblock mainmenu%}
+  <!-- Остальной контент страницы -->
+  {%block content%}
+  <div>
+    <!-- Здесь размещается контент, соответствующий каждой ссылке -->
+    <section id="birthday">
+      <h2>День рождения</h2>
+      <!-- Дополнительный контент для дня рождения -->
+    </section>
+    <section id="wedding">
+      <h2>Свадьба</h2>
+      <!-- Дополнительный контент для свадьбы -->
+    </section>
+    <section id="opening">
+      <h2>Открытие</h2>
+      <!-- Дополнительный контент для открытия -->
+    </section>
+    <section id="celebration">
+      <h2>Праздник</h2>
+      <!-- Дополнительный контент для праздника -->
+    </section>
+  </div>
+  {%endblock content%}
+</body>
+</html>
